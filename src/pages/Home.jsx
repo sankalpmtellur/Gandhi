@@ -269,44 +269,84 @@ const Home = () => {
       </section>
 
       <section id="cta" className="section bg-sand">
-        <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 md:grid-cols-[0.9fr_1.1fr]">
-          <div className="space-y-6">
-            <SectionHeading
-              eyebrow="Stories"
-              title="Quiet strength, lasting change"
-              subtitle="Gandhi's life was full of small acts that became large movements. Here are moments that defined his moral compass."
-            />
-            <div className="grid gap-6 sm:grid-cols-2">
-              <StoryCard
-                title="The train incident"
-                description="A moment of discrimination in South Africa sparked his lifelong commitment to dignity for all."
-                image={youngGandhi}
-              />
-              <StoryCard
-                title="The spinning wheel"
-                description="The charkha became a daily ritual—an emblem of self-reliance and economic justice."
-                image={charkha}
-              />
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6">
+          <div className="rounded-[2.5rem] border border-ink/10 bg-white/70 p-10 shadow-soft">
+            <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+              <div className="space-y-6">
+                <SectionHeading
+                  eyebrow="Stories"
+                  title="Quiet strength, lasting change"
+                  subtitle="Small acts became large movements. These moments shaped Gandhi's moral compass."
+                />
+                <div className="flex flex-wrap gap-3">
+                  <span className="rounded-full border border-ink/20 bg-paper px-4 py-2 text-xs uppercase tracking-[0.3em] text-ink/70">
+                    Courage
+                  </span>
+                  <span className="rounded-full border border-ink/20 bg-paper px-4 py-2 text-xs uppercase tracking-[0.3em] text-ink/70">
+                    Dignity
+                  </span>
+                  <span className="rounded-full border border-ink/20 bg-paper px-4 py-2 text-xs uppercase tracking-[0.3em] text-ink/70">
+                    Discipline
+                  </span>
+                </div>
+              </div>
+              <div className="rounded-[2rem] border border-ink/10 bg-ink p-6 text-paper shadow-soft">
+                <p className="text-xs uppercase tracking-[0.3em] text-paper/60">Final Thought</p>
+                <p className="mt-4 font-display text-2xl md:text-3xl">
+                  “Faith is not something to grasp; it grows through the courage to act.”
+                </p>
+                <p className="mt-4 text-sm text-paper/70">
+                  Gandhi’s legacy is less about monuments and more about the daily habit of choosing
+                  empathy, courage, and truth.
+                </p>
+              </div>
             </div>
           </div>
-          <div className="space-y-6">
-            <StoryCard
-              title="The march to the sea"
-              description="Thousands walked beside him, proving that discipline and unity can dismantle unjust power."
-              image={march}
-            />
-            <div className="rounded-2xl border border-ink/10 bg-white/70 p-6 shadow-soft">
-              <p className="text-xs uppercase tracking-[0.3em] text-ink/50">
-                Final Thought
-              </p>
-              <p className="mt-4 font-display text-2xl">
-                “Faith is not something to grasp; it grows through the courage
-                to act.”
-              </p>
-              <p className="mt-4 text-sm text-ink/70">
-                Gandhi’s legacy is less about monuments and more about the daily
-                habit of choosing empathy, courage, and truth.
-              </p>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            <div className="relative overflow-hidden rounded-[2rem] border border-ink/10 bg-white/80 shadow-soft">
+              <img
+                src={youngGandhi}
+                alt="Young Gandhi"
+                className="h-64 w-full object-cover md:h-72"
+              />
+              <div className="p-5">
+                <p className="text-xs uppercase tracking-[0.3em] text-ink/50">1893</p>
+                <h3 className="mt-2 font-display text-xl">The train incident</h3>
+                <p className="mt-2 text-sm text-ink/70">
+                  A moment of discrimination in South Africa sparked his lifelong commitment to
+                  dignity for all.
+                </p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-[2rem] border border-ink/10 bg-white/80 shadow-soft">
+              <img
+                src={charkha}
+                alt="Spinning wheel"
+                className="h-64 w-full object-cover md:h-72"
+              />
+              <div className="p-5">
+                <p className="text-xs uppercase tracking-[0.3em] text-ink/50">1918</p>
+                <h3 className="mt-2 font-display text-xl">The spinning wheel</h3>
+                <p className="mt-2 text-sm text-ink/70">
+                  The charkha became a daily ritual—an emblem of self-reliance and economic justice.
+                </p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-[2rem] border border-ink/10 bg-white/80 shadow-soft">
+              <img
+                src={march}
+                alt="Dandi March"
+                className="h-64 w-full object-cover md:h-72"
+              />
+              <div className="p-5">
+                <p className="text-xs uppercase tracking-[0.3em] text-ink/50">1930</p>
+                <h3 className="mt-2 font-display text-xl">The march to the sea</h3>
+                <p className="mt-2 text-sm text-ink/70">
+                  Thousands walked beside him, proving that discipline and unity can dismantle unjust
+                  power.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -16,45 +16,38 @@ const Home = () => {
   return (
     <div className="bg-paper">
       <section id="story" className="section">
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 md:grid-cols-[1.1fr_0.9fr]">
-          <div className="space-y-6">
-            <p className="text-xs uppercase tracking-[0.4em] text-ink/50">
-              Portrait of Purpose
-            </p>
-            <h1 className="animate-fade-up font-display text-4xl leading-tight text-ink md:text-6xl">
-              Mahatma Gandhi: a life of truth, courage, and tender defiance.
+        <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="space-y-7">
+            <div className="flex items-center gap-3">
+              <span className="h-[2px] w-10 bg-ink/40" />
+            </div>
+            <h1 className="animate-fade-up font-display text-4xl leading-[1.1] text-ink md:text-6xl">
+              MK Gandhi: a life of truth and courage.
             </h1>
             <p className="max-w-xl text-base text-ink/70 md:text-lg">
-              From a shy student in Porbandar to a global symbol of nonviolent
-              resistance, Gandhi's journey is a study in moral clarity,
-              disciplined action, and radical compassion. This modern portfolio
-              gathers his milestones, methods, and mindset through a vivid lens.
+              From a shy student in Porbandar to a global symbol of nonviolent resistance, Gandhi's
+              journey is a study in moral clarity, disciplined action, and radical compassion.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap items-center gap-4 pt-2">
               <a
                 href="#journey"
-                className="rounded-full bg-ink px-6 py-3 text-xs uppercase tracking-[0.3em] text-paper transition hover:-translate-y-0.5"
+                className="rounded-2xl border border-ink/40 bg-white px-7 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-ink shadow-soft transition hover:border-ink hover:bg-paper"
               >
                 Explore Journey
-              </a>
-              <a
-                href="#philosophy"
-                className="rounded-full border border-ink/20 px-6 py-3 text-xs uppercase tracking-[0.3em] text-ink transition hover:border-ink"
-              >
-                Gandhi’s Mindset
               </a>
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -left-8 -top-8 h-40 w-40 rounded-full bg-saffron/30 blur-3xl" />
-            <img
-              src={heroImage}
-              alt="Mahatma Gandhi portrait"
-              className="relative z-10 w-full rounded-[2.5rem] border border-ink/10 object-cover shadow-soft animate-float"
-            />
-            <div className="absolute -bottom-10 right-6 z-20 hidden w-56 rounded-2xl border border-ink/10 bg-white/80 p-4 text-sm text-ink/70 shadow-soft md:block">
-              “Live as if you were to die tomorrow. Learn as if you were to live
-              forever.”
+            <div className="absolute -left-6 -top-6 h-32 w-32 rounded-full bg-saffron/30 blur-3xl" />
+            <div className="relative overflow-hidden rounded-[2.5rem] border border-ink/10 bg-white/60 shadow-soft">
+              <img
+                src={heroImage}
+                alt="Mahatma Gandhi portrait"
+                className="h-full w-full object-cover animate-float"
+              />
+            </div>
+            <div className="mt-6 rounded-2xl border border-ink/10 bg-white/80 p-4 text-sm text-ink/70 shadow-soft">
+              “Live as if you were to die tomorrow. Learn as if you were to live forever.”
             </div>
           </div>
         </div>
@@ -90,7 +83,7 @@ const Home = () => {
           <SectionHeading
             eyebrow="Journey"
             title="The long road to freedom"
-            subtitle="Gandhi’s life was a tapestry of experiments with truth, stitched together by empathy and relentless discipline."
+            subtitle="Gandhi's life was a tapestry of experiments with truth, stitched together by empathy and relentless discipline."
           />
           <div className="space-y-10">
             <TimelineItem
@@ -116,7 +109,7 @@ const Home = () => {
       </section>
 
       <section id="philosophy" className="section">
-        <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="space-y-6">
             <SectionHeading
               eyebrow="Mindset"
@@ -125,46 +118,49 @@ const Home = () => {
             />
             <div className="grid gap-4">
               <div className="rounded-2xl border border-ink/10 bg-white/70 p-6 shadow-soft">
-                <h3 className="font-display text-xl">
-                  Nonviolence as strategy
-                </h3>
+                <h3 className="font-display text-xl">Nonviolence as strategy</h3>
                 <p className="mt-2 text-sm text-ink/70">
-                  Ahimsa was not passive. It was disciplined resistance that
-                  required courage, training, and a refusal to dehumanize
-                  opponents.
+                  Ahimsa was not passive. It was disciplined resistance that required courage,
+                  training, and a refusal to dehumanize opponents.
                 </p>
               </div>
               <div className="rounded-2xl border border-ink/10 bg-white/70 p-6 shadow-soft">
-                <h3 className="font-display text-xl">
-                  Self-reliance & simplicity
-                </h3>
+                <h3 className="font-display text-xl">Self-reliance & simplicity</h3>
                 <p className="mt-2 text-sm text-ink/70">
-                  Gandhi spun his own cloth and championed village industries,
-                  teaching that independence begins with everyday choices.
+                  Gandhi spun his own cloth and championed village industries, teaching that
+                  independence begins with everyday choices.
                 </p>
               </div>
               <div className="rounded-2xl border border-ink/10 bg-white/70 p-6 shadow-soft">
-                <h3 className="font-display text-xl">
-                  Unity across differences
-                </h3>
+                <h3 className="font-display text-xl">Unity across differences</h3>
                 <p className="mt-2 text-sm text-ink/70">
-                  He fought for religious harmony, speaking against caste
-                  prejudice and building coalitions rooted in empathy.
+                  He fought for religious harmony, speaking against caste prejudice and building
+                  coalitions rooted in empathy.
                 </p>
               </div>
             </div>
           </div>
-          <div className="space-y-6">
-            <img
-              src={threeMonkeys}
-              alt="Three monkeys of Gandhi"
-              className="h-64 w-full rounded-2xl object-cover shadow-soft"
-            />
-            <img
-              src={charkha}
-              alt="Charkha symbol"
-              className="h-64 w-full rounded-2xl object-cover shadow-soft"
-            />
+          <div className="grid gap-6">
+            <div className="relative overflow-hidden rounded-[2rem] border border-ink/10 shadow-soft">
+              <img
+                src={threeMonkeys}
+                alt="Three monkeys of Gandhi"
+                className="h-80 w-full object-cover md:h-[22rem]"
+              />
+              <div className="absolute bottom-4 left-4 rounded-full bg-paper/90 px-4 py-2 text-xs uppercase tracking-[0.3em] text-ink/60">
+                See no evil · Hear no evil · Speak no evil
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-[2rem] border border-ink/10 shadow-soft">
+              <img
+                src={charkha}
+                alt="Charkha symbol"
+                className="h-80 w-full object-cover md:h-[22rem]"
+              />
+              <div className="absolute bottom-4 left-4 rounded-full bg-paper/90 px-4 py-2 text-xs uppercase tracking-[0.3em] text-ink/60">
+                The wheel of self-reliance
+              </div>
+            </div>
           </div>
         </div>
       </section>

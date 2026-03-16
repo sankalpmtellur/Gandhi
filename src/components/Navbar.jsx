@@ -1,5 +1,3 @@
-import signature from '../assets/SignofGandhi.png'
-
 const links = [
   { href: '#story', label: 'Life Story' },
   { href: '#journey', label: 'Journey' },

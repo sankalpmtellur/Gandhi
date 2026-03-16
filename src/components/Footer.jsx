@@ -1,4 +1,4 @@
-import signature from '../assets/SignofGandhi.png'
+import signature from "../assets/SignofGandhi.png";
 
 const Footer = () => {
   return (
@@ -7,8 +7,8 @@ const Footer = () => {
         <div>
           <p className="font-display text-2xl">Truth in Action</p>
           <p className="mt-2 max-w-md text-sm text-ink/70">
-            A contemporary portfolio celebrating Gandhi’s life, philosophy, and the quiet power of
-            nonviolent courage.
+            A contemporary portfolio celebrating Gandhi's life, philosophy, and
+            the quiet power of nonviolent courage.
           </p>
         </div>
         <div className="flex flex-col items-start gap-3 md:items-end">
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

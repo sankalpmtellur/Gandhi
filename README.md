@@ -1,16 +1,35 @@
-# React + Vite
+# Mahatma Gandhi Portfolio (Modern Tribute)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A light‑themed, story‑driven portfolio that reimagines Mahatma Gandhi in today’s world. The site highlights his full life journey, philosophy, key moments, and enduring legacy with rich visuals and calm, elegant UI.
 
-Currently, two official plugins are available:
+## Features
+- Single‑page narrative layout with clear sections and smooth scrolling.
+- Curated typography pairing (Playfair Display + Source Sans 3).
+- Soft gradients, warm paper tones, and gentle motion.
+- Reusable React components for headings, timeline items, and story cards.
+- All provided assets are showcased across the experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React + Vite
+- Tailwind CSS
 
-## React Compiler
+## Project Structure
+- `src/pages/Home.jsx` – page layout and story flow
+- `src/components/` – reusable UI components
+- `src/assets/` – provided imagery
+- `src/index.css` – global styling, theme variables, and animations
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run Locally
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Build
+```bash
+npm run build
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Notes
+- Designed as a portfolio‑style narrative for modern audiences.
+- Light‑themed UI with emphasis on readability and timeless aesthetics.

@@ -193,39 +193,74 @@ const Home = () => {
           <SectionHeading
             eyebrow="Legacy"
             title="Enduring influence"
-            subtitle="Gandhi’s approach informs modern movements for justice, sustainability, and ethical leadership."
+            subtitle="Gandhi's approach informs modern movements for justice, sustainability, and ethical leadership."
           />
-          <div className="grid gap-6 md:grid-cols-[1.1fr_0.9fr]">
+          <div className="grid items-stretch gap-6 lg:grid-cols-[1fr_1.1fr]">
             <div className="grid gap-6">
-              <StoryCard
-                title="The power of moral leadership"
-                description="Gandhi’s influence reaches into civil rights movements worldwide, reminding leaders that integrity and empathy are not optional extras."
-                image={specs}
-              />
-              <StoryCard
-                title="A global icon"
-                description="From classrooms to protest lines, his image stands for the courage to refuse injustice without hatred."
-                image={portrait}
-              />
+              <div className="rounded-[2rem] border border-ink/10 bg-white/70 p-6 shadow-soft">
+                <div className="grid gap-6 md:grid-cols-[140px_1fr] md:items-center">
+                  <img
+                    src={specs}
+                    alt="Gandhi with spectacles"
+                    className="h-28 w-full rounded-2xl object-center md:h-36"
+                  />
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-ink/50">Moral Leadership</p>
+                    <h3 className="mt-3 font-display text-2xl text-ink">
+                      Integrity that shapes movements
+                    </h3>
+                    <p className="mt-2 text-sm text-ink/70">
+                      His influence runs through civil rights movements worldwide, reminding leaders
+                      that empathy and clarity are not optional extras.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="rounded-[2rem] border border-ink/10 bg-white/70 p-6 shadow-soft">
+                <div className="grid gap-6 md:grid-cols-[140px_1fr] md:items-center">
+                  <img
+                    src={portrait}
+                    alt="Gandhi portrait"
+                    className="h-28 w-full rounded-2xl object-cover md:h-36"
+                  />
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-ink/50">Global Icon</p>
+                    <h3 className="mt-3 font-display text-2xl text-ink">
+                      Courage without hatred
+                    </h3>
+                    <p className="mt-2 text-sm text-ink/70">
+                      From classrooms to protest lines, his image stands for the resolve to confront
+                      injustice while preserving dignity for all.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="rounded-[2rem] border border-ink/10 bg-ink text-paper shadow-soft">
-              <div className="flex h-full flex-col justify-between gap-6 p-8">
+            <div className="relative overflow-hidden rounded-[2.5rem] border border-ink/10 bg-ink text-paper shadow-soft">
+              <div className="absolute inset-0 opacity-20">
+                <img src={phases} alt="Gandhi legacy collage" className="h-full w-full object-center" />
+              </div>
+              <div className="relative flex h-full flex-col justify-between gap-10 p-10">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.3em] text-paper/60">
-                    In Today’s World
-                  </p>
-                  <h3 className="mt-4 font-display text-3xl">
-                    A modern Gandhi would build communities that lead with
-                    conscience.
+                  <p className="text-xs uppercase tracking-[0.3em] text-paper/60">In Today's World</p>
+                  <h3 className="mt-4 font-display text-3xl md:text-4xl">
+                    A modern Gandhi would build communities that lead with conscience.
                   </h3>
-                  <p className="mt-4 text-sm text-paper/70">
-                    Ethical business, climate justice, and restorative politics
-                    all echo Gandhi’s insistence that means matter just as much
-                    as ends.
+                  <p className="mt-4 text-sm text-paper/75 md:text-base">
+                    Ethical business, climate justice, and restorative politics echo his insistence
+                    that means matter as much as ends.
                   </p>
                 </div>
-                <div className="rounded-2xl bg-paper/10 p-4 text-xs uppercase tracking-[0.3em]">
-                  Be the change. Start locally. Lead with empathy.
+                <div className="grid gap-3 sm:grid-cols-3">
+                  <div className="rounded-2xl bg-paper/10 p-4 text-xs uppercase tracking-[0.3em]">
+                    Practice empathy
+                  </div>
+                  <div className="rounded-2xl bg-paper/10 p-4 text-xs uppercase tracking-[0.3em]">
+                    Choose courage
+                  </div>
+                  <div className="rounded-2xl bg-paper/10 p-4 text-xs uppercase tracking-[0.3em]">
+                    Serve locally
+                  </div>
                 </div>
               </div>
             </div>
@@ -239,7 +274,7 @@ const Home = () => {
             <SectionHeading
               eyebrow="Stories"
               title="Quiet strength, lasting change"
-              subtitle="Gandhi’s life was full of small acts that became large movements. Here are moments that defined his moral compass."
+              subtitle="Gandhi's life was full of small acts that became large movements. Here are moments that defined his moral compass."
             />
             <div className="grid gap-6 sm:grid-cols-2">
               <StoryCard

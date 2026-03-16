@@ -3,14 +3,14 @@ import StatCard from "../components/StatCard.jsx";
 import TimelineItem from "../components/TimelineItem.jsx";
 import StoryCard from "../components/StoryCard.jsx";
 
-import heroImage from "../assets/MG1.png";
+import heroImage from "../assets/mg1.png";
 import youngGandhi from "../assets/YoundGandhi.png";
 import phases from "../assets/AllphasesofGandhi.png";
 import march from "../assets/GandhiOnDandiMarch.png";
 import threeMonkeys from "../assets/3MonkeysofGandhi.png";
 import charkha from "../assets/CharakaofGandhi.png";
 import specs from "../assets/SpecsofGandhi.png";
-import portrait from "../assets/MG2.png";
+import portrait from "../assets/mg2.png";
 
 const Home = () => {
   return (

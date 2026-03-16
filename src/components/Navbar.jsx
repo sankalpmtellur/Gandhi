@@ -12,9 +12,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-paper/80 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-3">
-          <img src={signature} alt="Gandhi signature" className="h-10 w-auto" />
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-ink/60">Portfolio</p>
             <p className="font-display text-lg">Mahatma Gandhi</p>
           </div>
         </div>
